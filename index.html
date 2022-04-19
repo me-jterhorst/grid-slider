@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Slider</title>
+  </head>
+  <body>
+    <div class="slider--wrapper">
+      <ul id="sliderParent" class="slider-parent">
+        <li class="slider-parent__item">Hello</li>
+        <li class="slider-parent__item">Goodbye</li>
+        <li class="slider-parent__item">World</li>
+        <li class="slider-parent__item">Space</li>
+        <li class="slider-parent__item">Sun</li>
+        <li class="slider-parent__item">Moon</li>
+      </ul>
+
+      <div class="control__arrows">
+        <button onClick="slideBackward()" class="glide__arrow glide__arrow--left" aria-label="Slide backwards">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none">
+            <path
+              fill="#D2D7DB"
+              d="M14.053 30.052a1.5 1.5 0 1 0 2.138-2.104l-2.138 2.104ZM2.122 15.8 1.07 14.731 0 15.784l1.053 1.068L2.122 15.8ZM16.174 4.069a1.5 1.5 0 0 0-2.104-2.138l2.104 2.138Zm.017 23.879-13-13.2-2.138 2.104 13 13.2 2.138-2.104ZM3.174 16.868l13-12.799-2.104-2.138-13 12.8 2.104 2.137Z"
+            />
+          </svg>
+        </button>
+        <button onClick="slideForward()" class="glide__arrow glide__arrow--right" aria-label="Slide forwards">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none">
+            <path
+              fill="#D2D7DB"
+              d="M17.947 1.948a1.5 1.5 0 1 0-2.138 2.104l2.138-2.104ZM29.878 16.2l1.052 1.069L32 16.216l-1.053-1.068-1.069 1.052ZM15.826 27.931a1.5 1.5 0 0 0 2.104 2.138l-2.104-2.138Zm-.017-23.879 13 13.2 2.138-2.104-13-13.2-2.138 2.104Zm13.017 11.08-13 12.799 2.104 2.138 13-12.8-2.104-2.137Z"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </body>
+
+  <script defer src="js/app.js"></script>
+</html>
